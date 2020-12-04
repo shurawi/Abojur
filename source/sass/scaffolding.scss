@@ -5,13 +5,25 @@
 body {
   margin: 0;
   padding: 0;
-  min-width: 1440px;
-  font-family: "Arial", sans-serif;
+  min-width: 1366px;
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 32px;
-  color: #333333;
-  counter-reset: section-counter;
+  color: #695A59;
+}
+
+.page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:
+    auto
+    1fr
+    auto;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
 }
 
 .visually-hidden {
@@ -22,4 +34,33 @@ body {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
+}
+
+.wrap {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Medium";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "OldStandardTT-Regular";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/OldStandardTT-Regular.woff2") format("woff2"), url("../fonts/OldStandardTT-Regular.woff") format("woff");
 }

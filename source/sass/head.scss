@@ -1,0 +1,77 @@
+.head {
+  grid-area: header;
+  background-color: #F8F6F5;
+}
+
+.head__nav {
+  margin: 0 100px;
+  padding: 22px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+
+.head__logo {
+  grid-column: 1 / 5;
+}
+
+.head__link {
+  position: relative;
+  padding-left: 28px;
+  grid-column: 7 / 9;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #695A59;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19px;
+    height: 19px;
+    background: url("/img/phone_icon.svg") no-repeat;
+  }
+}
+
+.head__address {
+  position: relative;
+  padding-left: 28px;
+  grid-column: 9 / 12;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+  color: #695A59;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 21px;
+    background: url("/img/marker_icon.svg") no-repeat;
+  }
+}
+
+.head__btn {
+  position: relative;
+  width: 36px;
+  height: 32px;
+  margin: 0 0 0 auto;
+  font-size: 0;
+  background-color: #F8F6F5;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/img/burger_icon.svg") no-repeat;
+  }
+}
