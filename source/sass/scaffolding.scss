@@ -15,15 +15,6 @@ body {
 
 .page {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows:
-    auto
-    1fr
-    auto;
-  grid-template-areas:
-    "header"
-    "content"
-    "footer";
 }
 
 .visually-hidden {
@@ -37,7 +28,7 @@ body {
 }
 
 .wrap {
-  width: 1366px;
+  width: 1166px;
   margin: 0 auto;
 }
 
@@ -55,6 +46,14 @@ body {
   font-style: normal;
   font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 
 @font-face {
