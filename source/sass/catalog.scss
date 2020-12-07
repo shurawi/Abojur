@@ -59,11 +59,22 @@
 }
 
 .catalog__link {
+  position: relative;
   font-size: 14px;
   line-height: 16px;
   font-family: "Montserrat-Medium", "Arial", sans-serif;
   color: inherit;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 86px;
+    bottom: 5px;
+    width: 81px;
+    height: 8px;
+    background: url("/img/arrow_icon.svg") no-repeat;
+  }
 }
 
 .catalog__item--horizont {
