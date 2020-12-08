@@ -1,0 +1,64 @@
+.mission {
+  margin-top: 120px;
+  background-color: #343235;
+  background-image: url("/img/mission_bg.jpg");
+  background-repeat: repeat-x;
+  background-position: center bottom 20px;
+
+}
+
+.mission__warp {
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 20px;
+}
+
+.mission__titles {
+  grid-column: 7 /span 6;
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+}
+
+.mission__head {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  color: #9A8584;
+}
+
+.mission__title {
+  margin-top: 7px;
+  grid-column: 2 / span 4;
+  grid-row: 1;
+  color: #EEE9E6;
+}
+
+.mission__content {
+  margin-bottom: 23px;
+  grid-column: 8 / span 5;
+  grid-row: 2 / 3;
+}
+
+.mission__text {
+  margin-bottom: 15px;
+  color: #FBF3F0;
+}
+
+.mission__video {
+  grid-column: 1 /span 6;
+  grid-row: 1 / 4;
+}
+
+
+.mission__pic--big {
+  grid-column: 7 / span 6;
+  grid-row: 3 / 5;
+}
+
+.mission__pic--small {
+  grid-column: 4 / span 3;
+  grid-row: 4 / 5;
+}
