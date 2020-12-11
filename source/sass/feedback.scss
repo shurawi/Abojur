@@ -1,0 +1,134 @@
+.feedback {
+  margin-top: 120px;
+  background-color: rgba(52, 50, 53, 0.9);
+  background-image: url("/img/feedback_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.feedback__wrap {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 20px;
+}
+
+.feedback__titles {
+  padding-top: 120px;
+  grid-column: 1 / span 6;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 20px;
+}
+
+.feedback__head {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  color: rgba(154, 133, 132, 0.1);
+}
+
+.feedback__title {
+  margin-top: 7px;
+  grid-column: 2 / span 5;
+  grid-row: 1;
+  color: #EEE9E6;
+}
+
+.feedback__text {
+  padding-right: 10px;
+  padding-bottom: 44px;
+  grid-column: 2 / span 5;
+  color: #EEE9E6;
+}
+
+.feedback__form {
+  grid-column: 2 / span 5;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 20px;
+}
+
+.feedback__input {
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  grid-column: 1 / 8;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F6EDE9;
+  background-color: rgba(154, 133, 132, 0);
+  border: none;
+  border-bottom: 1px solid #A78587;
+}
+
+.feedback__select {
+  padding: 16px 20px;
+  grid-column: 1 / span 2;
+  font-size: 14px;
+  line-height: 18px;
+  color: #F6EDE9;
+  background-color: rgba(154, 133, 132, 0);
+}
+
+.feedback__option {
+  color: #F6EDE9;
+  background-color: rgba(52, 50, 53, 1);
+}
+
+.feedback__item {
+  grid-column: 3 /sapn 3;
+}
+
+.feedback__label {
+  position: relative;
+  padding-top: 5px;
+  padding-left: 80px;
+  display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 35px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #A78587;
+  }
+}
+
+.feedback__input:checked ~ .feedback__label {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 34px;
+    width: 29px;
+    height: 29px;
+    background: url("/img/check_icon.svg") no-repeat;
+    background-position: 1px 1px;
+    border: none;
+  }
+}
+
+.feedback__btn {
+  margin-top: 60px;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  grid-column: 1 / 8;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A78587;
+  background-color: rgba(154, 133, 132, 0);
+  border: 0;
+  border-top: 1px solid #A78587;
+  border-bottom: 1px solid #A78587;
+  cursor: pointer;
+}
+
+.feedback__img {
+  grid-column: 8 / span 5;
+  grid-row: 1 / 5;
+}
