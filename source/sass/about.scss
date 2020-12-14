@@ -54,6 +54,11 @@
 .about__link {
   font-family: "Montserrat-Regular", "Arial", sans-serif;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    color: #000000;
+  }
 }
 
 .about__fig {

@@ -43,6 +43,13 @@
   background-color: rgba(167, 133, 135, 0);
   outline: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #EEE9E6;
+    border-top: 1px solid #EEE9E6;
+    border-bottom: 1px solid #EEE9E6;
+  }
 }
 
 .promo__pic {

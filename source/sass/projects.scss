@@ -71,6 +71,16 @@
     height: 8px;
     background: url("/img/arrow-short_icon.svg") no-repeat;
   }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: #9A8584;
+
+    &::after {
+      background: url("/img/arrow-short-hover_icon.svg") no-repeat;
+    }
+  }
 }
 
 
@@ -85,6 +95,7 @@
   border-radius: 50%;
   border: none;
   outline: none;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -94,6 +105,18 @@
     width: 32px;
     height: 16px;
     background: url("/img/arrow-btn_icon.svg") no-repeat;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #FFFFFF;
+    border: 2px solid #343235;
+
+    &::before {
+      top: 27px;
+      left: 20px;
+      background: url("/img/arrow-btn-hover_icon.svg") no-repeat;
+    }
   }
 }
 
