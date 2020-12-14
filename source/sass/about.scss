@@ -17,6 +17,7 @@
 }
 
 .about__text {
+  margin-bottom: 15px;
   grid-column: 2 / span 6;
 }
 
@@ -26,13 +27,12 @@
 }
 
 .about__fig {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
   grid-column: 2 / 12;
-}
-
-.about__text {
-  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column-gap: 20px;
 }
 
 .about__text--main {
@@ -40,7 +40,7 @@
   grid-column: 1 / -1;
   font-size: 26px;
   line-height: 48px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-image: url("/img/about_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,13 +59,6 @@
   &:focus {
     color: #000000;
   }
-}
-
-.about__fig {
-  margin-bottom: 15px;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column-gap: 20px;
 }
 
 .about__pic--fig {
