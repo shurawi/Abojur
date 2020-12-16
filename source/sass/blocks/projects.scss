@@ -69,7 +69,7 @@
     left: 94px;
     width: 33px;
     height: 8px;
-    background: url("/img/arrow-short_icon.svg") no-repeat;
+    background: url("../img/arrow-short_icon.svg") no-repeat;
   }
 
   &:hover,
@@ -78,7 +78,7 @@
     color: #9a8584;
 
     &::after {
-      background: url("/img/arrow-short-hover_icon.svg") no-repeat;
+      background: url("../img/arrow-short-hover_icon.svg") no-repeat;
     }
   }
 }
@@ -104,7 +104,7 @@
     left: 22px;
     width: 32px;
     height: 16px;
-    background: url("/img/arrow-btn_icon.svg") no-repeat;
+    background: url("../img/arrow-btn_icon.svg") no-repeat;
   }
 
   &:hover,
@@ -115,7 +115,7 @@
     &::before {
       top: 27px;
       left: 20px;
-      background: url("/img/arrow-btn-hover_icon.svg") no-repeat;
+      background: url("../img/arrow-btn-hover_icon.svg") no-repeat;
     }
   }
 }

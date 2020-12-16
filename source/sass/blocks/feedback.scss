@@ -1,7 +1,7 @@
 .feedback {
   margin-top: 120px;
   background-color: rgba(52, 50, 53, 0.9);
-  background-image: url("/img/feedback_bg.png");
+  background-image: url("../img/feedback_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -160,7 +160,7 @@
     left: 34px;
     width: 29px;
     height: 29px;
-    background: url("/img/check_icon.svg") no-repeat;
+    background: url("../img/check_icon.svg") no-repeat;
     background-position: 1px 1px;
     border: none;
   }

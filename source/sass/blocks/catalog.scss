@@ -73,7 +73,7 @@
     bottom: 5px;
     width: 81px;
     height: 8px;
-    background: url("/img/arrow_icon.svg") no-repeat;
+    background: url("../img/arrow_icon.svg") no-repeat;
   }
 
   &:hover,
@@ -82,7 +82,7 @@
     font-family: "Montserrat-Bold", "Arial", sans-serif;
 
     &::after {
-      background: url("/img/arrow-hover_icon.svg") no-repeat;
+      background: url("../img/arrow-hover_icon.svg") no-repeat;
     }
   }
 }
